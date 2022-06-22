@@ -1,7 +1,10 @@
-
+const apiErrorHandler = require("./../helpers/error-handler");
 
 const getMainPage = (req, res) =>{
-    res.send('<h1>hello</h1>');
+    res.status(200).json({
+        message: 'hello'
+    })
+    
 }
 
 module.exports = {
