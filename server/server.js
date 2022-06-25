@@ -4,6 +4,7 @@ const cors = require("cors");
 const getMainRoutes = require("./routes/main-routes");
 const errorHandler = require("./helpers/error-handler");
 const mongoose = require("mongoose");
+const getProfileRoutes = require("./routes/profile-routes");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -17,12 +18,16 @@ app.listen(PORT, (error) => {
   error ? console.log(error) : console.log(`Listening port: ${PORT}`);
 });
 
+
+app.use(express.urlencoded({ extended: false }));
+
 // Main middlewares
 app.use(cors());
 app.use(express.json());
 
 // My middlewares
 app.use("/api", getMainRoutes);
+app.use("/api", getProfileRoutes);
 
 app.use((req, res, error) => {
   res.status(404).send('Error');
