@@ -3,9 +3,15 @@ const express = require("express");
 const cors = require("cors");
 const getMainRoutes = require("./routes/main-routes");
 const errorHandler = require("./helpers/error-handler");
+const mongoose = require("mongoose");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const db = process.env.MONGO_URL;
+
+mongoose.connect(db)
+  .then((res) => console.log('Connected to Mongo DB'))
+  .catch((error) => console.log(error));
 
 app.listen(PORT, (error) => {
   error ? console.log(error) : console.log(`Listening port: ${PORT}`);
