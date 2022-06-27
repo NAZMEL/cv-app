@@ -3,6 +3,6 @@ const { getEducation } = require("./../controllers/education-controller");
 
 const router = express.Router();
 
-router.get("/education", getEducation);
+router.get("", getEducation);
 
 module.exports = router;

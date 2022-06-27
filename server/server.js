@@ -2,13 +2,9 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const getMainRoutes = require("./routes/main-routes");
-const errorHandler = require("./helpers/error-handler");
 const mongoose = require("mongoose");
-const getProfileRoutes = require("./routes/profile-routes");
-const getEducationRoutes = require("./routes/education-routes");
-const getTechnologiesRoutes = require("./routes/technologies-routes");
-const getExperiencesRoutes = require("./routes/experiences-routes");
-const getProjectsRoutes = require("./routes/projects-routes");
+
+const getRoutes = require("./routes/routes");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -31,11 +27,7 @@ app.use(express.json());
 
 // My middlewares
 app.use("/api", getMainRoutes);
-app.use("/api", getProfileRoutes);
-app.use("/api", getEducationRoutes);
-app.use("/api", getTechnologiesRoutes);
-app.use("/api", getExperiencesRoutes);
-app.use("/api", getProjectsRoutes);
+app.use("/api", getRoutes);
 
 app.use((req, res, error) => {
   res.status(404).send("Error");

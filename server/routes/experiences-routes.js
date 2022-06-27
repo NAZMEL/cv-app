@@ -3,6 +3,6 @@ const { getExperience } = require("./../controllers/experiences-controller");
 
 const router = express.Router();
 
-router.get("/experience", getExperience);
+router.get("", getExperience);
 
 module.exports = router;
