@@ -8,6 +8,16 @@ const technologiesSchema = new Schema({
   databases: [],
 });
 
-const Technologies = mongoose.model('Technologies', technologiesSchema);
+const otherTecnologiesSchema = new Schema({
+  languages: [],
+  pmTools: [],
+  technologies: [],
+});
 
-module.exports = Technologies;
+const Technologies = mongoose.model("Technologies", technologiesSchema);
+const OtherTechnologies = mongoose.model(
+  "Other-technologies",
+  otherTecnologiesSchema
+);
+
+module.exports = { Technologies, OtherTechnologies };
