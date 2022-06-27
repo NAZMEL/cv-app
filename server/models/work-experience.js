@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const experiencesSchema = new Schema({
+const experienceSchema = new Schema({
   job: String,
   position: String,
   resonsibilities: [],
   workingPeriod: String,
 });
 
-const Experiences = mongoose.model("Work-experiences", experiencesSchema);
+const Experience = mongoose.model("Work-experiences", experienceSchema);
 
-module.exports = Experiences;
+module.exports = Experience;

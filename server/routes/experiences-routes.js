@@ -1,8 +1,8 @@
 const express = require("express");
-const { getExperiences } = require("./../controllers/experiences-controller");
+const { getExperience } = require("./../controllers/experiences-controller");
 
 const router = express.Router();
 
-router.get("/experiences", getExperiences);
+router.get("/experience", getExperience);
 
 module.exports = router;

@@ -29,6 +29,6 @@ const profileSchema = new Schema({
   languages: Schema.Types.Mixed,
 });
 
-const Profile = mongoose.model('Profile', profileSchema);
+const Profile = mongoose.model("Profile", profileSchema);
 
 module.exports = Profile;
