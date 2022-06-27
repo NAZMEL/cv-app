@@ -26,6 +26,7 @@ const profileSchema = new Schema({
     type: String,
     required: true,
   },
+  languages: Schema.Types.Mixed,
 });
 
 const Profile = mongoose.model('Profile', profileSchema);

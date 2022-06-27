@@ -5,6 +5,7 @@ const getMainRoutes = require("./routes/main-routes");
 const errorHandler = require("./helpers/error-handler");
 const mongoose = require("mongoose");
 const getProfileRoutes = require("./routes/profile-routes");
+const getEducationRoutes = require("./routes/education-routes");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -28,6 +29,7 @@ app.use(express.json());
 // My middlewares
 app.use("/api", getMainRoutes);
 app.use("/api", getProfileRoutes);
+app.use("/api", getEducationRoutes);
 
 app.use((req, res, error) => {
   res.status(404).send('Error');
