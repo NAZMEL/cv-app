@@ -1,0 +1,6 @@
+.navBar{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background-color: aqua;
+}
