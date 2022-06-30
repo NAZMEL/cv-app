@@ -30,5 +30,5 @@ app.use("/api", getMainRoutes);
 app.use("/api", getRoutes);
 
 app.use((req, res, error) => {
-  res.status(404).send("Error");
+  res.status(404).send(error);
 });
