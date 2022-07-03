@@ -1,9 +1,9 @@
 import {applyMiddleware, combineReducers, createStore} from "redux";
 import thunkMiddleware from "redux-thunk";
-import {reducer as formReducer} from "redux-form";
+import profileReducer from "./profile-reducer";
 
 let reducers = combineReducers({
-    
+    profilePage: profileReducer,
 });
 
 let store = createStore(reducers, applyMiddleware(thunkMiddleware));

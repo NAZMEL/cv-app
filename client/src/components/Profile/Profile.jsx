@@ -1,7 +1,11 @@
 import React from "react";
 
 const Profile = (props) => {
-  return <div>Profile</div>;
+  return (
+  <div>
+    frgf
+  </div>
+  )
 };
 
 export default Profile;
