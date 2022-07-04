@@ -12,5 +12,8 @@ export const profileAPI = {
   },
   getProjects(){
     return instance.get("projects").then(response => response);
+  },
+  getTechnologies() {
+    return instance.get("technologies").then(response => response);
   }
 };

@@ -2,6 +2,15 @@ import React from "react";
 import Profile from "./Profile";
 import { connect } from "react-redux";
 import { getProfile } from "./../../redux/profile-reducer";
+import {
+  getEmail,
+  getFullName,
+  getLanguages,
+  getLinkedIn,
+  getPosition,
+  getTelegram,
+  getPhone,
+} from "../../selectors/profile-selector";
 
 class ProfileContainer extends React.Component {
   componentDidMount() {
@@ -9,13 +18,19 @@ class ProfileContainer extends React.Component {
   }
 
   render() {
-    return <Profile {...this.props.profilePage} />;
+    return <Profile {...this.props} />;
   }
 }
 
 const mapStateToProps = (state) => {
   return {
-    profilePage: state.profilePage,
+    fullName: getFullName(state),
+    position: getPosition(state),
+    phone: getPhone(state),
+    email: getEmail(state),
+    telegram: getTelegram(state),
+    linkedIn: getLinkedIn(state),
+    languages: getLanguages(state),
   };
 };
 
