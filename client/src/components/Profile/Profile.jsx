@@ -24,7 +24,7 @@ const Profile = ({
       <br />
       {Object.keys(languages).map((key) => {
         return (
-          <p>
+          <p key={key}>
             {key} - {languages[key]}
           </p>
         );

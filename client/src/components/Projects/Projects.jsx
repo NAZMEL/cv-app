@@ -1,11 +1,17 @@
-import React from 'react';
+import React from "react";
 
-const Projects = () =>{
-    return (
-        <div>
-            Projects
-        </div>
-    )
-}
+const Projects = (props) => {
+  return (
+    <div>
+      {props.projects.map((project) => {
+        return (
+          <div>
+            {project.name} - {project.link}
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
 export default Projects;

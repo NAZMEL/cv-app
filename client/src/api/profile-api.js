@@ -10,5 +10,7 @@ export const profileAPI = {
   getExperience(){
     return instance.get("experience").then(response => response);
   },
-  
+  getProjects(){
+    return instance.get("projects").then(response => response);
+  }
 };

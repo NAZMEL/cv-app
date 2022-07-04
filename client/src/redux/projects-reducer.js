@@ -9,7 +9,7 @@ let initialState = [
   },
 ];
 
-export const experienceReducer = (state = initialState, action) => {
+export const projectsReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_PROJECTS:
       return [...action.payload];
@@ -31,4 +31,4 @@ export const getProjects = () => (dispatch) => {
   });
 };
 
-export default experienceReducer;
+export default projectsReducer;

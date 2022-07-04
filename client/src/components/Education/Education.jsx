@@ -6,7 +6,7 @@ const Education = ({ education }) => {
       Education
       {education.map((item) => {
         return (
-          <div>
+          <div key={item.area}>
             {item.area}
             {item.place}
             {item.dates}

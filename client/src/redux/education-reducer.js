@@ -4,9 +4,9 @@ const SET_EDUCATION = "SET_EDUCATION";
 
 let initialState = [
   {
-    area: "area",
-    place: "place",
-    dates: "dates",
+    area: "",
+    place: "",
+    dates: "",
   },
 ];
 
