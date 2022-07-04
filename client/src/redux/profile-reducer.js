@@ -15,42 +15,28 @@ let initialState = {
 };
 
 export const profileReducer = (state = initialState, action) => {
-  let stateCopy = { ...state };
-
   switch (action.type) {
     case SET_PROFILE:
-      return { ...state, ...action.payload };
+      return {
+        ...state,
+        ...action.payload,
+      };
     default:
-      return stateCopy;
+      return state;
   }
 };
 
-const setProfile = (
-  fullName,
-  position,
-  email,
-  phone,
-  telegram,
-  linkedIn,
-  ...languages
-) => ({
+const setProfile = (props) => ({
   type: SET_PROFILE,
-  payload: {
-    fullName,
-    position,
-    email,
-    phone,
-    telegram,
-    linkedIn,
-    ...languages,
-  },
+  payload: { ...props },
 });
 
-export const getProfile = () => async (dispatch) => {
-  let data = await profileAPI.getMainInfo();
-  if(data.resulCode === 0){
-    dispatch(setProfile({...data.data, ...data.data.languages}));
-  }
+export const getProfile = () => (dispatch) => {
+  profileAPI.getMainInfo().then((response) => {
+    if (response.status === 200) {
+      dispatch(setProfile(response.data));
+    }
+  });
 };
 
 export default profileReducer;

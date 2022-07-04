@@ -1,9 +1,11 @@
-import {applyMiddleware, combineReducers, createStore} from "redux";
+import { applyMiddleware, combineReducers, createStore } from "redux";
 import thunkMiddleware from "redux-thunk";
+import educationReducer from "./education-reducer";
 import profileReducer from "./profile-reducer";
 
 let reducers = combineReducers({
-    profilePage: profileReducer,
+  profilePage: profileReducer,
+  educationPage: educationReducer,
 });
 
 let store = createStore(reducers, applyMiddleware(thunkMiddleware));
