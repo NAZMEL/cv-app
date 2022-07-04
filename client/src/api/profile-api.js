@@ -6,5 +6,9 @@ export const profileAPI = {
   },
   getEducation(){
     return instance.get("education").then((response) => response);
-  }
+  },
+  getExperience(){
+    return instance.get("experience").then(response => response);
+  },
+  
 };
