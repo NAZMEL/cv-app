@@ -1,0 +1,30 @@
+.educationSection {
+    margin: 20px 0 0 50px;
+}
+
+.educationBlock {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+}
+
+.educationArea {
+    font-size: 1.2rem;
+    text-decoration: dashed;
+}
+
+.educationPlace {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.eduactionDate {
+    margin-top: 5px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

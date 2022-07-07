@@ -1,6 +1,7 @@
-.navBar{
+.navBar {
     display: flex;
     flex-direction: column;
+    align-content: center;
     margin: 30px;
     background-color: aqua;
 }

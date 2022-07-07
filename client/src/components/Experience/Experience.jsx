@@ -1,21 +1,21 @@
 import React from "react";
+import Responsibilities from "./Responsibilities/Responsibilities";
+import style from "./Experience.module.css";
 
 const Experience = (props) => {
   return (
-    <div>
+    <div className={style.experienceSection}>
       {props.experience.map((item) => {
-        return <div>
-            {item.job}
-            {item.position}
-            {item.workingPeriod}
-            <br/><br/>
-            {item.responsibilities.map(responsibility =>{
-                return <div>
-                        {responsibility}
-                    </div>
-            })}
-            <hr/>
-        </div>;
+        return (
+          <div className={style.experienceBlock}>
+            <span className={style.experienceInfo}>Organization: {item.job}</span>
+            <span className={style.experienceInfo}>Position: {item.position}</span>
+            <span className={style.experienceInfo}>Period: {item.workingPeriod}</span>
+
+            <Responsibilities responsibilities={item.responsibilities} />
+            <hr />
+          </div>
+        );
       })}
     </div>
   );

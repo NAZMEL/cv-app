@@ -2,6 +2,7 @@ import React from "react";
 import Profile from "./Profile";
 import { connect } from "react-redux";
 import { getProfile } from "./../../redux/profile-reducer";
+import userIcon from "./../../assets/profile.jpg";
 import {
   getEmail,
   getFullName,
@@ -18,7 +19,7 @@ class ProfileContainer extends React.Component {
   }
 
   render() {
-    return <Profile {...this.props} />;
+    return <Profile {...this.props} imgPath={userIcon} />;
   }
 }
 

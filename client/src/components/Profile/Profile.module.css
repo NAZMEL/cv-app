@@ -1,0 +1,18 @@
+.profileBlock {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.profileInfo {
+    margin: 20px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.infoBlock {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
