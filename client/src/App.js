@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import useRoutes from "./routes";
 import NavbarBlock from "./components/Navbar/Navbar";
 import { Container, Col, Row } from "react-bootstrap";
+import ProfileContainer from "./components/Profile/ProfileContainer";
 
 function App() {
   const routes = useRoutes();
@@ -15,7 +16,10 @@ function App() {
           <Col lg="2">
             <NavbarBlock />
           </Col>
-          <Col lg md="auto">{routes}</Col>
+          <Col lg="8" sm="6">
+            <ProfileContainer/>
+            {routes}
+          </Col>
         </Row>
       </Container>
     </BrowserRouter>
