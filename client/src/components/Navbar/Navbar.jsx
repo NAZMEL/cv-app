@@ -5,15 +5,8 @@ import style from "./Navbar.module.css";
 
 const NavbarBlock = () => {
   return (
-    // <div className={style.navBlock}>
-    //   <NavLink to="/profile">Main information</NavLink>
-    //   <NavLink to="/education">Education</NavLink>
-    //   <NavLink to="/experience">Experience</NavLink>
-    //   <NavLink to="/projects">Projects</NavLink>
-    //   <NavLink to="/technologies">Technologies</NavLink>
-    // </div>
     <div >
-      <Navbar className={style.navBlock} collapseOnSelect expand="lg md" bg="dark" variant="dark">
+      <Navbar className={style.navBlock} collapseOnSelect expand="lg md" variant="dark">
         <Container>
           <Navbar.Toggle aria-controls="responsive-navbar"></Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar">
@@ -28,8 +21,6 @@ const NavbarBlock = () => {
         </Container>
       </Navbar>
     </div>
-
-
   );
 };
 
