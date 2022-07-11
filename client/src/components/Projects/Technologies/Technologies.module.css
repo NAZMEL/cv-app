@@ -3,13 +3,14 @@
     flex-direction: row;
     color: rgb(255, 255, 255);
     text-decoration: dashed;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
 .technologyItem {
     margin-right: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color: darkgray;
+    background-color: rgb(104, 104, 104);
     font-size: 0.8rem;
 }
