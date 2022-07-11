@@ -14,8 +14,8 @@ const NavbarBlock = () => {
               <Nav.Link as={NavLink} to="/profile">Main Information</Nav.Link>
               <Nav.Link as={NavLink} to="/education">Education</Nav.Link>
               <Nav.Link as={NavLink} to="/experience">Experience</Nav.Link>
-              <Nav.Link as={NavLink} to="/projects">Projects</Nav.Link>
-              <Nav.Link as={NavLink} to="/technologies">Technologies</Nav.Link>
+              <Nav.Link as={NavLink} to="/projects">Portfolio</Nav.Link>
+              <Nav.Link as={NavLink} to="/technologies">Using technologies</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

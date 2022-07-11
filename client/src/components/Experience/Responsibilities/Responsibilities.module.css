@@ -1,11 +1,6 @@
 .responsibilityBlock{
-    margin: 20px 0 0 0px;
-}
-
-.responsibilitiesTitle{
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-    font-weight: 600;
+    display: flex;
+    flex-direction: column;
 }
 
 .responsibilityItem{
