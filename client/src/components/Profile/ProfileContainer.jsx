@@ -10,6 +10,8 @@ import {
   getLinkedIn,
   getPosition,
   getTelegram,
+  getFacebook,
+  getMotivationLetter,
   getPhone,
 } from "../../selectors/profile-selector";
 
@@ -30,7 +32,9 @@ const mapStateToProps = (state) => {
     phone: getPhone(state),
     email: getEmail(state),
     telegram: getTelegram(state),
+    facebook: getFacebook(state),
     linkedIn: getLinkedIn(state),
+    motivationLetter: getMotivationLetter(state),
     languages: getLanguages(state),
   };
 };

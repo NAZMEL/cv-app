@@ -8,7 +8,9 @@ let initialState = {
   email: "",
   phone: "",
   telegram: "",
+  facebook: "",
   linkedIn: "",
+  motivationLetter: "",
   languages: {},
 };
 

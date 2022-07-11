@@ -3,5 +3,7 @@ export const getPosition = (state) => state.profilePage.position;
 export const getPhone = (state) => state.profilePage.phone;
 export const getEmail = (state) => state.profilePage.email;
 export const getTelegram = (state) => state.profilePage.telegram;
+export const getFacebook = (state) => state.profilePage.facebook;
 export const getLinkedIn = (state) => state.profilePage.linkedIn;
+export const getMotivationLetter = (state) => state.profilePage.motivationLetter;
 export const getLanguages = (state) => state.profilePage.languages;

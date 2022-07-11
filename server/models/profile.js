@@ -22,7 +22,15 @@ const profileSchema = new Schema({
     type: String,
     required: true,
   },
+  facebook: {
+    type: String,
+    required: true,
+  },
   linkedIn: {
+    type: String,
+    required: true,
+  },
+  motivationLetter:{
     type: String,
     required: true,
   },

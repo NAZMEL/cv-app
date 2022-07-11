@@ -1,0 +1,15 @@
+.technologiesSector {
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    text-decoration: dashed;
+    letter-spacing: 2px;
+}
+
+.technologyItem {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: darkgray;
+    font-size: 0.8rem;
+}

@@ -1,0 +1,8 @@
+.contactsBlock {
+    display: flex;
+    flex-direction: row;
+}
+
+.profileContact {
+    margin: 10px;
+}

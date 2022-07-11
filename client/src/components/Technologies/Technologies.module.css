@@ -1,0 +1,12 @@
+.technologiesSection {
+    margin-left: 80px;
+    color: whitesmoke;
+}
+
+.technologiesTitle {
+    font-size: 2rem;
+    color: whitesmoke;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}

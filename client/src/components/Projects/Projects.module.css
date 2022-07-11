@@ -1,10 +1,10 @@
-.educationSection {
+.portfolioSection {
     margin-left: 80px;
     margin-right: 10px;
     color: whitesmoke;
 }
 
-.educationTitle {
+.portfolioTitle {
     font-size: 2rem;
     color: whitesmoke;
     font-weight: 600;
@@ -12,7 +12,7 @@
     text-transform: uppercase;
 }
 
-.educationBlock {
+.portfolioItem {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -25,19 +25,24 @@
     border-radius: 25px;
 }
 
-.educationArea {
-    font-size: 1.2rem;
-    text-decoration: dashed;
+.projectName {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
-.educationPlace {
+.projectDescription {
     font-size: 1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
 }
 
-.eduactionDate {
-    margin-top: 5px;
-    font-size: 1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
+.projectName a {
+    color: rgb(246, 246, 246);
+}
+
+
+.projectName a:hover {
+    color: rgb(206, 199, 156);
 }

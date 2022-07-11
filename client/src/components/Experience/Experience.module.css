@@ -1,17 +1,18 @@
-.experienceSection{
+.experienceSection {
     margin-left: 80px;
+    margin-right: 10px;
     color: whitesmoke;
 }
 
-.experienceTitle{
+.experienceTitle {
     font-size: 2rem;
-    color:whitesmoke;
+    color: whitesmoke;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
 }
 
-.experienceBlock{
+.experienceBlock {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -20,16 +21,16 @@
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid rgb(182, 177, 177);
-    background-color:rgb(75, 75, 77);
+    background-color: rgb(75, 75, 77);
     border-radius: 25px;
 }
 
-.experienceJob{
+.experienceJob {
     font-size: 1.2rem;
     text-decoration: dashed;
 }
 
-.experienceDate{
+.experienceDate {
     margin-top: 5px;
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

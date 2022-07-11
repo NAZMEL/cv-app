@@ -1,9 +1,11 @@
 import React from "react";
+import style from "./Technologies.module.css";
 
 const Technologies = (props) => {
   return (
-    <div>
-      Technologies
+    <div className={style.technologiesSection}>
+      <div className={style.technologiesTitle}>Technologies</div>
+
       {props.technologies.map((technology) => {
         return (
           <div>
