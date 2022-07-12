@@ -9,8 +9,9 @@ const ProfileContacts = (contacts) => {
         return (
           <a className={style.profileContact} key={key}>
             <SocialIcon
+            className={style.profileIcon}
               url={contacts[key]}
-              style={{ height: 30, width: 30 }}
+              style={{ height: 40, width: 40 }}
               bgColor="whitesmoke"
             />
           </a>

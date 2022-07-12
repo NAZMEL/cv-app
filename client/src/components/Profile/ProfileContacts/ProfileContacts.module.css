@@ -6,3 +6,7 @@
 .profileContact {
     margin: 10px;
 }
+
+.profileIcon:hover{
+    bgColor: red;
+}

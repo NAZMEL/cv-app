@@ -10,7 +10,7 @@ let initialState = {
   telegram: "",
   facebook: "",
   linkedIn: "",
-  motivationLetter: "",
+  motivationLetter: [],
   languages: {},
 };
 

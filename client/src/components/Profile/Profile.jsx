@@ -2,6 +2,7 @@ import React from "react";
 import ProfileImage from "./ProfileImage/ProfileImage";
 import ProfileLanguages from "./ProfileLanguages/ProfileLanguages";
 import ProfileContacts from "./ProfileContacts/ProfileContacts";
+import MotivationLetter from "./MotivationLetter/MotivationLetter";
 import style from "./Profile.module.css";
 
 const Profile = ({
@@ -25,18 +26,20 @@ const Profile = ({
           <span className={style.profileName}>{fullName}</span>
           <span className={style.profilePosition}>{position}</span>
           <hr />
-          <ProfileContacts
-            phone={phone}
-            email={email}
-            telegram={telegram}
-            facebook={facebook}
-            linkedIn={linkedIn}
-          />
-          <hr />
-          <ProfileLanguages languages={languages} />
+          <div className={style.profileRow}>
+            <ProfileContacts
+              phone={phone}
+              email={email}
+              telegram={telegram}
+              facebook={facebook}
+              linkedIn={linkedIn}
+            />
+            <ProfileLanguages languages={languages} />
+          </div>
         </div>
       </div>
-      <div className={style.motivationLetter}>{motivationLetter}</div>
+      <hr style={{ color: "#fff", height: "2px" }} />
+      <MotivationLetter letter={motivationLetter} />
     </>
   );
 };

@@ -7,7 +7,7 @@ const ProfileLanguages = (props) => {
       {Object.keys(props.languages).map((key) => {
         return (
           <p key={key} className={style.languagesInfo}>
-            {key} - {props.languages[key]}
+            <span className={style.languageName}>{key}</span> - {props.languages[key]}
           </p>
         );
       })}
