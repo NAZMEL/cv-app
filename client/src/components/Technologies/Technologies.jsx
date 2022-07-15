@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Technologies.module.css";
+import TechnologiesItems from "./TechnologiesItems/TechnologiesItems";
 
 const Technologies = (props) => {
   return (
@@ -9,24 +10,34 @@ const Technologies = (props) => {
       {props.technologies.map((technology) => {
         return (
           <div>
-            {technology.languages.map((language) => {
-              return <div>{language}</div>;
-            })}
-            <hr />
+            <div className={style.technologiesBlock}>
+              <div className={style.technologyItemsTitle}>
+                Programming languages
+              </div>
+              <TechnologiesItems items={technology.languages} />
+            </div>
 
-            {technology.mainLibraries.map((library) => {
-              return <div>{library}</div>;
-            })}
-            <hr />
+            <div className={style.technologiesBlock}>
+              <div className={style.technologyItemsTitle}>Main libraries</div>
+              <TechnologiesItems items={technology.mainLibraries} />
+            </div>
 
-            {technology.databases.map((database) => {
-              return <div>{database}</div>;
-            })}
-            <hr />
+            <div className={style.technologiesBlock}>
+              <div className={style.technologyItemsTitle}>Main tools</div>
+              <TechnologiesItems items={technology.tools} />
+            </div>
 
-            {technology.technologies.map((item) => {
-              return <div>{item}</div>;
-            })}
+            <div className={style.technologiesBlock}>
+              <div className={style.technologyItemsTitle}>Dabases</div>
+              <TechnologiesItems items={technology.databases} />
+            </div>
+
+            <div className={style.technologiesBlock}>
+              <div className={style.technologyItemsTitle}>
+                Experience with technologies before
+              </div>
+              <TechnologiesItems items={technology.otherLanguages} />
+            </div>
           </div>
         );
       })}

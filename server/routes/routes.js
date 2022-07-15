@@ -10,7 +10,7 @@ const router = express.Router();
 router.use("/profile", profileRoutes);
 router.use("/experience", experienceRoutes);
 router.use("/education", educationRoutes);
-router.use(technologiesRoutes);
+router.use("/technologies", technologiesRoutes);
 router.use("/projects", projectsRoutes);
 
 module.exports = router;

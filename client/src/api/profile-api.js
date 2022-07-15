@@ -15,5 +15,5 @@ export const profileAPI = {
   },
   getTechnologies() {
     return instance.get("technologies").then(response => response);
-  }
+  },
 };

@@ -1,4 +1,4 @@
-.technologiesSector {
+.itemArea {
     display: flex;
     flex-direction: row;
     color: rgb(255, 255, 255);
@@ -6,7 +6,7 @@
     font-weight: 600;
 }
 
-.technologyItem {
+.itemName {
     margin-right: 10px;
     padding: 10px;
     border-radius: 5px;

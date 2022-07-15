@@ -1,12 +1,8 @@
 const express = require("express");
-const {
-  getTechnologies,
-  getOtherTechnologies,
-} = require("./../controllers/technologies-controller");
+const { getTechnologies } = require("./../controllers/technologies-controller");
 
 const router = express.Router();
 
-router.get("/technologies", getTechnologies);
-router.get("/other-technologies", getOtherTechnologies);
+router.get("", getTechnologies);
 
 module.exports = router;

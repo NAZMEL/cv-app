@@ -5,8 +5,9 @@ const SET_TECHNOLOGIES = "SET_TECHNOLOGIES";
 let initialState = [
   {
     languages: [],
+    otherLanguages: [],
     mainLibraries: [],
-    technologies: [],
+    tools: [],
     databases: [],
   },
 ];

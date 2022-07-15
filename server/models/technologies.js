@@ -4,20 +4,13 @@ const Schema = mongoose.Schema;
 const technologiesSchema = new Schema({
   languages: [],
   mainLibraries: [],
-  teghnologies: [],
+  tools: [],
   databases: [],
+  otherLanguages: [],
 });
 
-const otherTecnologiesSchema = new Schema({
-  languages: [],
-  pmTools: [],
-  technologies: [],
-});
+
 
 const Technologies = mongoose.model("Technologies", technologiesSchema);
-const OtherTechnologies = mongoose.model(
-  "Other-technologies",
-  otherTecnologiesSchema
-);
 
-module.exports = { Technologies, OtherTechnologies };
+module.exports = { Technologies };
